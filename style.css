@@ -1,0 +1,405 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #172033;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    color: #172033;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav div {
+    display: flex;
+    gap: 30px;
+}
+
+nav div a {
+    color: #172033;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav div a:hover {
+    color: #2563eb;
+}
+
+nav div img {
+    width: 28px;
+    height: auto;
+    display: block;
+}
+
+nav div a:last-child img {
+    transition: transform 0.2s;
+}
+
+nav div a:last-child img:hover {
+    transform: scale(1.1);
+}
+
+/* INÍCIO */
+
+#inicio {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+#inicio > p:first-child {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #64748b;
+}
+
+#inicio h1 {
+    font-size: 64px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+#inicio h1 + p {
+    font-size: 22px;
+    color: #172033;
+    margin: 15px 0 30px;
+}
+
+#inicio div {
+    display: flex;
+    gap: 15px;
+}
+
+#inicio div a {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+
+/* LINKEDIN */
+
+#inicio div a:first-child {
+    background-color: #0A66C2;
+    color: white;
+}
+
+#inicio div a:first-child:hover {
+    background-color: #004182;
+    color: white;
+}
+
+
+/* GITHUB */
+
+#inicio div a:last-child {
+    background-color: white;
+    color: #172033;
+    border: 1px solid #d1d5db;
+}
+
+#inicio div a:last-child:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+/* SOBRE MIM / PERFIL */
+
+#sobre {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+#sobre > div {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+#sobre h2 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#sobre p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+#sobre i {
+    display: inline-block;
+    width: 20px;
+    margin-right: 8px;
+    text-align: center;
+    color: black;
+}
+
+
+/* FORMAÇÃO */
+
+#formacao {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+#formacao > h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#formacao > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#formacao article {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+#formacao article p:first-child {
+    color: #2563eb;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#formacao article h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#formacao article p:last-child {
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+
+/* COMPETÊNCIAS */
+
+#competencias {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+#competencias > h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#competencias h2 span {
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+#competencias > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+#competencias span {
+    background-color: white;
+    color: #172033;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+
+/* EXPERIÊNCIA */
+
+#experiencia {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+#experiencia > h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#experiencia > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+#experiencia article {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+#experiencia article p:first-child {
+    color: #2563eb;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#experiencia article h3 {
+    font-size: 22px;
+    margin: 10px 0 15px;
+}
+
+#experiencia article p:last-child {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #172033;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #2563eb;
+}
+
+footer p {
+    color: #64748b;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVO - TABLET E TELEMÓVEL */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    nav {
+        padding: 20px;
+    }
+
+    nav div {
+        gap: 15px;
+    }
+
+
+    /* INÍCIO */
+
+    #inicio {
+        padding: 60px 20px;
+    }
+
+    #inicio h1 {
+        font-size: 42px;
+    }
+
+
+    /* SOBRE */
+
+    #sobre {
+        padding: 50px 20px;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FORMAÇÃO */
+
+    #formacao {
+        padding: 50px 20px;
+    }
+
+    #formacao > div {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* COMPETÊNCIAS */
+
+    #competencias {
+        padding: 50px 20px;
+    }
+
+    #competencias > div {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* EXPERIÊNCIA */
+
+    #experiencia {
+        padding: 50px 20px;
+    }
+
+    #experiencia > div {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 30px 20px;
+    }
+}
