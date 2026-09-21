@@ -72,6 +72,17 @@ nav div a:last-child img:hover {
 }
 
 
+/* MENU HAMBURGER */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
 /* INÍCIO */
 
 #inicio {
@@ -345,12 +356,37 @@ footer p {
         padding: 20px;
     }
 
-    nav div {
-        gap: 15px;
+    /* Mostra o botão hamburger */
+
+    .menu-icon {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
     }
 
-    nav div a:not(:last-child) {
+    /* Esconde o menu inicialmente */
+
+    nav .menu {
         display: none;
+
+        position: absolute;
+        top: 70px;
+        right: 20px;
+
+        background-color: white;
+        padding: 20px;
+
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Mostra o menu quando o checkbox está selecionado */
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
     }
 
 
@@ -382,8 +418,11 @@ footer p {
 
     /* COMPETÊNCIAS */
 
-    
-   #competencias > div {
+    #competencias {
+        padding: 50px 20px;
+    }
+
+    #competencias > div {
         grid-template-columns: 1fr;
     }
 
