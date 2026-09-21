@@ -24,9 +24,10 @@ header {
 }
 
 nav {
+    width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px;
 
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,7 @@ nav > a {
 nav div {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 nav div a {
@@ -69,12 +71,14 @@ nav div a:last-child img:hover {
     transform: scale(1.1);
 }
 
+
 /* INÍCIO */
 
 #inicio {
+    width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 #inicio > p:first-child {
@@ -84,7 +88,7 @@ nav div a:last-child img:hover {
 }
 
 #inicio h1 {
-    font-size: 64px;
+    font-size: clamp(42px, 6vw, 64px);
     margin: 0;
     line-height: 1.1;
 }
@@ -98,6 +102,7 @@ nav div a:last-child img:hover {
 #inicio div {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 #inicio div a {
@@ -106,7 +111,6 @@ nav div a:last-child img:hover {
     border-radius: 6px;
     font-weight: 600;
 }
-
 
 
 /* LINKEDIN */
@@ -135,12 +139,14 @@ nav div a:last-child img:hover {
     color: #2563eb;
 }
 
+
 /* SOBRE MIM / PERFIL */
 
 #sobre {
+    width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 80px 0;
+    padding: 80px 20px;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -177,9 +183,10 @@ nav div a:last-child img:hover {
 /* FORMAÇÃO */
 
 #formacao {
+    width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 80px 0;
+    padding: 80px 20px;
 }
 
 #formacao > h2 {
@@ -189,7 +196,7 @@ nav div a:last-child img:hover {
 
 #formacao > div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
@@ -220,19 +227,15 @@ nav div a:last-child img:hover {
 /* COMPETÊNCIAS */
 
 #competencias {
+    width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 80px 0;
+    padding: 80px 20px;
 }
 
 #competencias > h2 {
     font-size: 32px;
     margin-bottom: 30px;
-}
-
-#competencias h2 span {
-    font-size: 28px;
-    margin-right: 8px;
 }
 
 #competencias > div {
@@ -255,9 +258,10 @@ nav div a:last-child img:hover {
 /* EXPERIÊNCIA */
 
 #experiencia {
+    width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 80px 0;
+    padding: 80px 20px;
 }
 
 #experiencia > h2 {
@@ -267,7 +271,7 @@ nav div a:last-child img:hover {
 
 #experiencia > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
@@ -311,6 +315,7 @@ footer > div {
     justify-content: center;
     gap: 30px;
     margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 footer a {
@@ -330,7 +335,7 @@ footer p {
 }
 
 
-/* RESPONSIVO - TABLET E TELEMÓVEL */
+/* RESPONSIVO */
 
 @media (max-width: 768px) {
 
@@ -344,6 +349,10 @@ footer p {
         gap: 15px;
     }
 
+    nav div a:not(:last-child) {
+        display: none;
+    }
+
 
     /* INÍCIO */
 
@@ -352,7 +361,7 @@ footer p {
     }
 
     #inicio h1 {
-        font-size: 42px;
+        font-size: clamp(38px, 10vw, 50px);
     }
 
 
@@ -370,18 +379,11 @@ footer p {
         padding: 50px 20px;
     }
 
-    #formacao > div {
-        grid-template-columns: 1fr;
-    }
-
 
     /* COMPETÊNCIAS */
 
-    #competencias {
-        padding: 50px 20px;
-    }
-
-    #competencias > div {
+    
+   #competencias > div {
         grid-template-columns: 1fr;
     }
 
@@ -390,10 +392,6 @@ footer p {
 
     #experiencia {
         padding: 50px 20px;
-    }
-
-    #experiencia > div {
-        grid-template-columns: 1fr;
     }
 
 
