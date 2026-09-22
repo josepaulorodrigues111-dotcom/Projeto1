@@ -41,6 +41,9 @@ nav > a {
     font-weight: 700;
 }
 
+nav > a:hover{
+    color: #2563eb;
+}
 nav div {
     display: flex;
     gap: 30px;
